@@ -2,11 +2,8 @@ package aPOM_Classes;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -15,11 +12,12 @@ import utility_package.Utility_class;
   
 public class Instrument {
 	
-	WebDriver driver;
+WebDriver driver;
 
-@FindBy(xpath="(//li[@class='navbarClassItem'])[8]")
+@FindBy(xpath="/html/body/app-root/app-private-layout/app-navbar/div/ul/li[9]/a")
 private WebElement InstrumentModule;
-@FindBy(xpath="/html/body/app-root/app-private-layout/div/div/div/app-instrumentslist/div[2]/div/form/div/div[1]/div/div[2]/a")
+
+@FindBy(xpath="/html/body/app-root/app-private-layout/div/div/div/app-instrumentslist/div[2]/div/form/div/div[1]/div/div[7]/a")
 private WebElement CreateNewInstrument;
 	//@FindBy(xpath="//a[@class='page_btn']") private WebElement CreateNew;
 	
@@ -81,20 +79,13 @@ private WebElement CancelButton;
 
 
 
+@FindBy(xpath="/html/body/app-root/app-private-layout/app-navbar/div/ul/li[1]/a") private WebElement Decontamination;
+@FindBy(xpath= "/html/body/app-root/app-private-layout/app-navbar/div/ul/li[1]/div/a[1]") private WebElement Receive; 
+@FindBy(xpath= "//input[@typeaheadoptionfield='name']") private WebElement SendID;
 
 
 
-
-
-
-
-
-
-
-
-
-
-                public  Instrument(WebDriver driver)
+public  Instrument(WebDriver driver)
 	                {
 	                  PageFactory.initElements(driver,this);
 	                }
@@ -119,13 +110,13 @@ public void dropdownInventoryType()
 public void CategoryDropDown()
 {
 	Select drop2 =new Select(DropdownInstrumentCategory);
-	drop2.selectByVisibleText("Category 1");
+	drop2.selectByVisibleText("scissor10x20");
 }
 	
 public void Subcategory()
 {           
 	Select drop3=new Select(InstrumentSubcategory);
-	drop3.selectByVisibleText(" Sub Category 1");
+	drop3.selectByVisibleText("Dish kidney small");
 }
 	
 
@@ -204,6 +195,20 @@ public void ClickOnDate()
  }
 
 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ }
 	
 	
 	
@@ -221,6 +226,5 @@ public void ClickOnDate()
 	
 	
 	
-	 	
-}
+	
 

@@ -17,7 +17,7 @@ public class Utility_class {
 	{
 		Properties prop=new Properties();
 		
-		FileInputStream file=new FileInputStream("C:\\Users\\sbambilke\\eclipse-workspace\\DD framework\\AID_Projectname\\K.properties");
+		FileInputStream file=new FileInputStream("C:\\Users\\sbambilke\\eclipse-workspace\\DD framework\\Kiwimed_Instrutrack\\K.properties");
 		prop.load(file);
 		String GetKeyValue =prop.getProperty(key);
 		return GetKeyValue;

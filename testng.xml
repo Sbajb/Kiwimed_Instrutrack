@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test_Class.NewTest"/>
-      <class name="test_Class.LoginValidation"/>
+      <class name="test_Class.Kiwimed_Flow_Validation"/>
+      <class name="test_Class.UserloginValidation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
