@@ -22,17 +22,29 @@ public class Base_class1 {
 	public void launchingBrowser()
 	{
 		
+		
+  System.setProperty(
+        "webdriver.chrome.driver",
+        "C:\\chrome\\chromedriver-win64\\chromedriver.exe");
+
+    ChromeOptions options = new ChromeOptions();
+
+    options.addArguments("--start-maximized");
+
+    driver = new ChromeDriver(options);
+ 		
+		
 //System.setProperty("webdriver.chrome.driver","C:\\chromedriverextension\\chromedriver.exe");
 	   // System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
       // WebDriverManager.chromedriver().setup();
 	   //System.setProperty("webdriver.http.factory", "jdk-http-client");
 		
-		ChromeOptions options=new ChromeOptions();
+		//ChromeOptions options=new ChromeOptions();
 		 
-		driver = new ChromeDriver(options);
+		//driver = new ChromeDriver(options);
 		
-	  options.addArguments("--start-maximized");
+	 // options.addArguments("--start-maximized");
 
 		 
 		
@@ -46,51 +58,13 @@ public class Base_class1 {
 	    
 	   // options.addArguments("user-data-dir=/path/to/your/custom/profile");
 	    
-	    
-	    
-	    
-	    
-	    
-	    
 //	    
 //	            chrome_options1.add_argument("--incognito")
 //	    	    chrome_options1.add_argument('--disable-popup-blocking')
 //	    	    chrome_options1.add_argument("--force-device-scale-factor=0.8")
 //	    	    driver = Chrome(options=chrome_options1, version_main=116)
-//	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
 		//WebDriverManager.edgedriver().setup();
-       // driver =new EdgeDriver();
-
-	    
-		
-	
-		
-		
-		
-		
-		
-		
+       // driver =new EdgeDriver();	
 		
 		//options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
      	//options.addArguments("--disable-features=NetworkService");
@@ -98,8 +72,7 @@ public class Base_class1 {
 	   // options.addArguments("--disable-extensions");
     	//options.setProxy(null);
 		
-		// driver=new ChromeDriver();
-		
+		// driver=new ChromeDriver();	
 		 
 	    // WebDriverManager.chromedriver().setup();
 		// WebDriverManager.chromedriver().setup();
