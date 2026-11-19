@@ -27,7 +27,7 @@ public class Utility_class {
 	public static void takescreenshot (WebDriver driver,String TCID) throws IOException
 	{
 		File source =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest= new File("E:\\Failed\\"+TCID+"image.Png");
+		File dest= new File("C:\\Failed\\"+TCID+"image.Png");
 		FileHandler.copy(source, dest);
 	}
 	public static void takescreenshot2 (WebDriver driver,String TCID) throws IOException
